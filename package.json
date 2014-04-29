@@ -23,18 +23,20 @@
     "node": "0.10.x"
   },
   "dependencies": {
-    "passport": "0.2.x"
+    "passport": "0.2.x",
+    "hoek": "2.x.x"
   },
   "peerDependencies": {
-    "hapi": ">=2.x",
-    "yar": ">=1.x"
+    "hapi": "4.x.x",
+    "yar": "2.x.x"
   },
   "devDependencies": {
-    "hapi": "3.x",
-    "lab": "1.x.x",
-    "complexity-report": "0.x.x",
-    "passport-local": "0.1.x",
-    "yar": "2.x"
+    "hapi": "4.x.x",
+    "joi": "3.x.x",
+    "lab": "3.x.x",
+    "complexity-report": "1.x.x",
+    "passport-local": "1.x.x",
+    "yar": "2.x.x"
   },
   "scripts": {
     "test": "make test-cov"

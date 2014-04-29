@@ -1,7 +1,7 @@
 test:
 	@TEST=1 node node_modules/lab/bin/lab
-test-cov: 
-	@TEST=1 node node_modules/lab/bin/lab -r threshold -t 100
+test-cov:
+	@TEST=1 node node_modules/lab/bin/lab -t 100
 test-cov-html:
 	@TEST=1 node node_modules/lab/bin/lab -r html -o coverage.html
 complexity:

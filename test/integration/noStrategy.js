@@ -1,6 +1,7 @@
 // Load modules
 
 var Hapi = require('hapi');
+var Joi = require('joi');
 var Lab = require('lab');
 var LocalStrategy = require('passport-local');
 
@@ -116,8 +117,8 @@ describe('Travelogue', function () {
                 config: {
                     validate: {
                         payload: {
-                            username: Hapi.types.string().required(),
-                            password: Hapi.types.string().required()
+                            username: Joi.string().required(),
+                            password: Joi.string().required()
                         }
                     }
                 },
